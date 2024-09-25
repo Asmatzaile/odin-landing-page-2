@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --dark-blue: #1F2937;
+    --light-blue: #3882F6;
+    --grey: #E5E7EB;
+    --white: #F9FAF8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #878787;
+    flex: 1 1 50%;
+    min-height: 200px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.information .cards {
+    display: flex;
+    gap: 40px;
+}
+
+.information .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.information .cards .card div {
+    height: 144px;
+    width: 144px;
+    border: 4px solid var(--light-blue);
+    border-radius: 16px;
+}
+
+header, .hero {
+    width: 1000px;;
+}
+
+header {
+    padding: 20px;
+}
+
+.hero {
+    padding: 60px 20px 100px;
+}
+
+.information {
+    padding:  40px 20px 80px;
+    width: 650px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+    width: 870px;
+}
+
+.quote .quote-author {
+    align-self: flex-end;
+}
+
+.action-bg {
+    padding: 80px 20px;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 30px 60px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.action button {
+    border: 2px solid var(--white);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[class$="-bg"] {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.hero-bg, footer, .header-bg {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+button, .action {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+button, .action h2 {
+    font-weight: bold;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero, header a {
+    font-size: 18px;
+    color: var(--grey);
+}
+
+
+.hero .hero-text-primary {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.quote-bg {
+    background-color: var(--grey);
+}
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark-blue);
+}
+
+.quote-author {
+    font-weight: bold;
+}
